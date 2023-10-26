@@ -18,10 +18,14 @@ main {
     width: 100%;
     text-align: center;
 }
-.formHolder {
+.fieldHolder {
     border: 0px;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .formLabel {
     display: inline-block;
@@ -34,7 +38,6 @@ main {
     width: 50%;
     min-width: 300px;
     padding: 8px;
-    margin-bottom: 10px;
     font-size: 18px;
 }
 button {
