@@ -51,3 +51,34 @@ button > a {
     font-size: 18px;
     color: black;
 }
+
+.navbar {
+    display:contents;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #36454F;
+    width: 100%;
+  }
+
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+  }
+
+.navbar li a:hover {
+    background-color: #A9A9A9;
+  }
+
+  .active {
+    background-color: #6082B6;
+  }
