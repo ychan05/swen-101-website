@@ -1,5 +1,5 @@
 
-body {
+.form body {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -52,8 +52,13 @@ button > a {
     color: black;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
 .navbar {
     display:contents;
+    font-family: 'Arial';
 }
 .navbar ul {
     list-style-type: none;
