@@ -17,5 +17,28 @@
                 <li style="float:right"><a href="account.html">Account</a></li>
               </ul>
         </nav>
+
+        <main class="form">
+            <h1 class="formTitle">Report Status</h1>
+
+            <h2>If you have <strong>already tested positive</strong> for COVID, please specify the time of the test here.</h2>
+            <div class="fieldHolder">
+                <label class="formLabel" for="positive">Tested Positive?:</label>
+                <input class="formField" type="text" id="positive" name="positive">
+            </div>
+            <h2>If you were near someone that had COVID (regardless of if you are currently positive), fill out when here.</h2>
+            <div class="fieldHolder">
+                <label class="formLabel" for="closeContact">Close Contact?:</label>
+                <input class="formField" type="text" id="closeContact" name="closeContact">
+            </div>
+            <h2>If you have traveled, please list the places you have been to.</h2>
+            <div class="fieldHolder">
+                <textarea class="formField" id="travelArea" name="travelArea"></textarea>
+            </div>
+            <br>
+            <div class="fieldHolder">
+                <button>Submit</button>
+            </div>
+        </main>
     </body>
 </html>
