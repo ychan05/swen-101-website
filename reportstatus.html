@@ -18,6 +18,24 @@
               </ul>
         </nav>
 
+        <div id="overlay" style="display:none;">
+            <div id="notifMain">
+                <p class="warning">Possible Exposure</p>
+                <ul>
+                    <li>Location</li>
+                    <li>Time</li>
+                    <li>Whether other person is positive or was just close contact</li>
+                </ul>
+            
+                <p>Instructions on how to keep people safe when you are identified as a close contact.</p>
+            
+                <p>If you have tested positive, please press Exposed to Covid. Otherwise, you can exit.</p>
+                <div class="fieldHolder">
+                    <button>Exposed to Covid</button>
+                    <button onclick="closeNotif()">Exit instead</button>
+                </div>
+            </div>
+        </div>
         <main class="form">
             <h1 class="formTitle">Report Status</h1>
 
@@ -37,8 +55,18 @@
             </div>
             <br>
             <div class="fieldHolder">
-                <button>Submit</button>
+                <button onclick="openNotif()">Submit</button>
             </div>
         </main>
     </body>
+    <script>
+        function openNotif() {
+            let notif = document.getElementById("overlay");
+            notif.setAttribute("style", "display:block;")
+        }
+        function closeNotif() {
+            let notif = document.getElementById("overlay");
+            notif.setAttribute("style", "display:none;")
+        }
+    </script>
 </html>
